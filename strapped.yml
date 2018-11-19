@@ -62,10 +62,7 @@ brew:
 
 unix_utils:
   mkdir:
-    - { dir: /Users/matthew/development }
-  echo:
-    - { phrase: "You have successfully installed strapped.sh" }
-    - { phrase: "Made with <3 by Azohra" }
+    - { dir: /Users/matthew/Development }
 
 dockutils:
   apps:
