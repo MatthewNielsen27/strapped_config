@@ -1,0 +1,115 @@
+strapped:
+  repo: https://raw.githubusercontent.com/azohra/strapped/master/straps
+
+git:
+  clone:
+    - { repo: git@github.com:kelseyhightower/nocode.git, folder: /Users/matthew/Development/nocode }
+    - { repo: git@github.com:azohra/strapped.git,            folder: /Users/matthew/Development/lyra   }
+
+brew:
+  tap:
+    - { name: azohra/tools } 
+    - { name: homebrew/cask } 
+    - { name: homebrew/cask-drivers } 
+    - { name: homebrew/cask-fonts }
+    - { name: homebrew/cask-versions }
+    - { name: homebrew/core } 
+
+  package:
+    - { name: doctl,           upgrade: true } 
+    - { name: openssh,         upgrade: true } 
+    - { name: bash,            upgrade: true }  
+    - { name: lyra,            upgrade: true } 
+    - { name: openssl,         upgrade: true } 
+    - { name: ruby,            upgrade: true } 
+    - { name: elixir,          upgrade: true } 
+    - { name: bash-completion, upgrade: true } 
+    - { name: htop,            upgrade: true } 
+    - { name: jq,              upgrade: true }
+    - { name: packer,          upgrade: true } 
+    - { name: python,          upgrade: true } 
+    - { name: wget,            upgrade: true } 
+    - { name: node,            upgrade: true } 
+    - { name: parallel,        upgrade: true } 
+    - { name: dockutil,        upgrade: true } 
+    - { name: git,             upgrade: true } 
+    - { name: perl,            upgrade: true }  
+    - { name: readline,        upgrade: true } 
+    - { name: terraform,       upgrade: true } 
+    - { name: yq,              upgrade: true } 
+
+  cask:
+    - { name: 1password,                         upgrade: true }   
+    - { name: google-cloud-sdk,                  upgrade: true }  
+    - { name: steam,                             upgrade: true }
+    - { name: calibre,                           upgrade: true }   
+    - { name: intellij-idea,                     upgrade: true }  
+    - { name: openemu,                           upgrade: true }  
+    - { name: visual-studio-code,                upgrade: true }
+    - { name: cleanmymac,                        upgrade: true }  
+    - { name: font-fauna-one,                    upgrade: true }                             
+    - { name: private-internet-access,           upgrade: true }  
+    - { name: discord,                           upgrade: true }                                
+    - { name: divvy,                             upgrade: true }
+    - { name: font-hack-nerd-font,               upgrade: true }   
+    - { name: font-sharetechmono-nerd-font-mono, upgrade: true }  
+    - { name: microsoft-office,                  upgrade: true }                   
+    - { name: slack,                             upgrade: true } 
+    - { name: docker,                            upgrade: true }                    
+    - { name: google-chrome,                     upgrade: true }                   
+    - { name: noun-project,                      upgrade: true }                       
+    - { name: spotify,                           upgrade: true } 
+
+unix_utils:
+  mkdir:
+    - { dir: /Users/matthew/development }
+  echo:
+    - { phrase: "You have successfully installed strapped.sh" }
+    - { phrase: "Made with <3 by Azohra" }
+
+dockutils:
+  apps:
+    - { name: Google Chrome,      pos: 1, path: "/Applications/Google Chrome.app" }
+    - { name: Slack,              pos: 2, path: "/Applications/Slack.app" }
+    - { name: Spotify,            pos: 3, path: "/Applications/Spotify.app" }
+    - { name: Terminal,           pos: 4, path: "/Applications/Utilities/Terminal.app" }
+    - { name: Visual Studio Code, pos: 5, path: "/Applications/Visual Studio Code.app" }
+    - { name: Microsoft Outlook,  pos: 6, path: "/Applications/Microsoft Outlook.app" }
+  dirs:
+    - { path: "~/Downloads",      view: fan, display: stack, sort: dateadded }
+    - { path: "~/Documents",      view: fan, display: stack, sort: dateadded }
+    - { path: "~/Pictures",       view: fan, display: stack, sort: dateadded }
+
+npm:
+  - lodash
+  - request
+  - express
+  - async
+  - debug
+  - semver
+  - gulp
+  - commander
+  - react
+  - typescript
+
+visual_studio_code:
+  extensions:
+    - { name: teabyii.ayu }
+    - { name: davidanson.vscode-markdownlint }
+    - { name: zignd.html-css-class-completion }
+    - { name: ms-vscode.cpptools }
+    - { name: mjmcloug.vscode-elixir }
+    - { name: zhuangtongfa.material-theme}
+    - { name: PKief.material-icon-theme }
+    - { name: PeterJausovec.vscode-docker }
+    - { name: dbaeumer.vscode-eslint }
+    - { name: xabikos.javascriptsnippets }
+    - { name: formulahendry.code-runner }
+    - { name: alefragnani.project-manager }
+    - { name: eamodio.gitlens }
+    - { name: humao.rest-client }
+    - { name: rebornix.ruby }
+    - { name: CoenraadS.bracket-pair-colorizer } 
+    - { name: cstuder.gitlab-ci-validator }
+    - { name: pgourlain.erlang }
+    - { name: mauve.terraform }
